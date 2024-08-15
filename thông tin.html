@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow lướt qua</title>
+    <link rel="stylesheet" href="nhap f.css">
+    <style>
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+    </style>
+</head>
+<body>
+    <section style=" background-color:#F5F5F5;">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#"><img src="images__1_-removebg-preview (1).png"  height="43px" style="border-radius: 10%;"></a>
+            </div>
+            <div class="links">
+                <a href="nhapf.html" target="page">Trang chủ </a>
+                <a href="sản phẩm.html" target="page">Sản Phẩm </a>
+               
+                <a href="nhap e.html" target="page">Liên hệ </a> 
+                <a href="thông tin.html" target="page"> thông tin</a>
+            </div>
+    
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm">
+                <button>Tìm</button>
+            </div>
+            <div class="cart">
+                <a href="#"><img src="logo.png" height="70px" style="border-radius: 10%;"></a>
+            </div>
+        </div>
+
+
+
+    <div class="container">
+        <div class="bên1">
+            <div class="slideshow-container">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.15752-9/452992880_479105761546290_6100999905752880627_n.png?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeE18go-BYOtEb7z8Qlv8qTHrQ4Em9Ay1iGtDgSb0DLWIexJAz6i1KpCnAItuXNGiPEuzVrGb_ztC_GFr_R6hutq&_nc_ohc=qGHUj4xEVwAQ7kNvgF_hXzo&_nc_ht=scontent.fhan14-1.fna&oh=03_Q7cD1QGCjy39FyQxfxzQXw1l0qpR5LK2sjq7ogSYVY_nE6VQxA&oe=66E316CD" alt="Slide 1"style="width:33%">
+                    </div>
+                    <div class="slide">
+                        <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.15752-9/452640288_1067780921531236_7525394918573926178_n.png?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFe14Y0w-OxTh9pY_anqUKtNWUDoL-ZutE1ZQOgv5m60UOEuIkKw4VSSZEOjeFs1bMBH-nqxD-1wsDR30d-keVW&_nc_ohc=7GpI_KOXnzUQ7kNvgG7uf9W&_nc_ht=scontent.fhan14-2.fna&oh=03_Q7cD1QEo5IxpPgsVOA-kKHubrA142jE3CfwTcv10FFn13p_nJA&oe=66E33A19" alt="Slide 2"style="width:33%">
+                    </div>
+                    <div class="slide">
+                        <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.15752-9/454543687_1175056756882923_2581966265556568221_n.png?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeE-UUi-rfGWDSNN3ZvvX_MBe3sF182JwTp7ewXXzYnBOlB4P9YOZF-iy0tyds_TKKjbiDXqbjpZ_b7uzJralvxP&_nc_ohc=QI-iAgt0mz8Q7kNvgHQ3gb9&_nc_ht=scontent.fhan14-1.fna&oh=03_Q7cD1QH0f-yQYH1Gq8sfiM7SZshHJyKPBjPTNvGv73SdAYTmxQ&oe=66E30444" alt="Slide 3"style="width:33%">
+                    </div>
+                    <div class="slide">
+                        <img src="https://scontent.fhan14-5.fna.fbcdn.net/v/t1.15752-9/453883937_863067415319223_3262612437532378848_n.png?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHjtXFcaTDC4giRUWS4UnnNQdpgbnkwbE5B2mBueTBsTjEUXm08HI1fSdVCc6mwozvOn98pCQ1G_E1i0YLDS4YG&_nc_ohc=J17U-jg0TrIQ7kNvgHoDZxy&_nc_ht=scontent.fhan14-5.fna&oh=03_Q7cD1QErdO8NP35BwLNdy5HmXhz8p9w5qNqkFnzLTTVPMHj_qw&oe=66E32788" alt="Slide 3"style="width:33%">
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button onclick="showFirstSlide()">Đầu tiên</button>
+                <button onclick="showPrevSlide()">Trước đó</button>
+                <button onclick="showNextSlide()">Kế tiếp</button>
+                <button onclick="showLastSlide()">Cuối cùng</button>
+                <button onclick="stopSlideshow()">Dừng lại</button>
+                <button onclick="startSlideshow()">Bắt đầu</button>
+            </div>
+        </div>
+
+        <div class="bên2">
+            <h2>Thông tin</h2>
+            <ul>
+                <li>Được sinh viên Lê Quốc Anh phát triển dựa trên một trang wed bán hàng có tên là Shopee với khoảng thời gian là 8 ngày</li>
+                <li>Trang wed sử dụng HTML, CSS, và JavaScript để phát triển giao diện và chức năng của trang web.</li>
+                <li>Trang wed có giao diện dể nhình, dể tiếp cận.</li>
+                <li>Trang wed có khả năng hoạt động trơn tru, mượt mà mà không đòi hỏi hiệu năng thiết bị quá cao.</li>
+                <li>Hứa hẹn đây có thể trở thành một trang wed với nhiều người biết đến.</li> 
+            </ul>
+        </div>
+    </div>
+</section>
+<hr style=" border: 0;height: 5px; background-color: #ff4737;">
+    
+<div class="contact-form">
+    <center>
+    <h2>Phát triển </h2>
+    <div class="đáy">
+        <p><strong>Tên sinh viên:</strong> Lê Quốc Anh</p>
+        <p><strong>MSSV:</strong> PD10815</p>
+        <p><strong>Địa chỉ:</strong> 354 Tô Hiệu, phường Hoàng Minh, quận Liên Chiểu, thành phố Đà Nẵng</p>
+        <p><strong>Email:</strong> anhlqpd10815@gmail.com</p>
+        <p><strong>Số điện thoại:</strong> 0832261607</p>
+    </div>
+</center>
+</div>
+    <script>
+        let slides = document.querySelector('.slides');
+        let slideIndex = 0;
+        let slideInterval = setInterval(showNextSlide, 2000);
+        let totalSlides = slides.children.length;
+
+        function showNextSlide() {
+            slideIndex = (slideIndex + 1) % totalSlides;
+            updateSlidePosition();
+        }
+
+        function showPrevSlide() {
+            slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+            updateSlidePosition();
+        }
+
+        function showFirstSlide() {
+            slideIndex = 0;
+            updateSlidePosition();
+        }
+
+        function showLastSlide() {
+            slideIndex = totalSlides - 1;
+            updateSlidePosition();
+        }
+
+        function updateSlidePosition() {
+            slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+        }
+
+        function stopSlideshow() {
+            clearInterval(slideInterval);
+        }
+
+        function startSlideshow() {
+            slideInterval = setInterval(showNextSlide, 2000);
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="gio_hang.css">
+    
+</head>
+<body>
+
+
+
+
+
+    <div class="container">
+        
+        <div class="logo">
+            <a href="nhapf.html"><img src="pngtree-red-hollow-right-arrow-png-image_5794227-removebg-preview (1).png"  height="30" style=" border-radius: 10%;"></a>
+        </div>
+
+        <h1>Thông tin hóa đơn<hr style=" border: 0;height: 5px; background-color: #ff4737;"></h1>
+   
+
+        <div class="checkout-container">
+            <!-- Thông tin khách hàng -->
+            <div class="customer-info">
+                <h2>Thông tin khách hàng</h2>
+                <form>
+                    <label for="name">Họ tên</label>
+                    <input type="text" id="name" required>
+                
+                    <label for="gender">Giới tính</label>
+                    <select id="gender" required>
+                        <option>Nam</option>
+                        <option>Nữ</option>
+                        <option>Khác</option>
+                    </select>
+                
+                    <label for="address">Địa chỉ</label>
+                    <input type="text" id="address" pattern="{a-z}" required>
+                
+                    <label for="phone">Điện thoại</label>
+                    <input type="tel" id="phone"  pattern="[0-9]{10,11}" required>
+                
+                    <label for="email">Email</label>
+                    <input type="email" id="email"  required>
+                
+                    <label for="dob">Ngày sinh</label>
+                    <input type="date" id="dob" value="1989-11-06" required>
+
+                    <h3>Hình thức thanh toán</h3>
+                    <div class="payment-method">
+                        <input type="radio" id="tien-mat" name="payment" checked>
+                        <label for="tien-mat">Tiền mặt</label><br>
+
+                        <input type="radio" id="chuyen-khoan" name="payment">
+                        <label for="chuyen-khoan">Chuyển khoản</label><br>
+
+
+                    </div>
+
+                    <button class="submit-btn" onclick="checkout()">Đặt hàng</button>
+                </form>
+            </div>
+
+            <!-- Giỏ hàng -->
+            <div class="cart-info">
+                <h2>Sản phẩm</h2>
+                <div id="cart-items">
+                    <!-- Dữ liệu giỏ hàng sẽ được thêm vào đây -->
+                </div>
+                <div class="total">
+                    <strong>Tổng tiền: </strong><span id="total-price">0</span> VND
+                </div>
+        
+                <div class="coupon">
+                    <input type="text" placeholder="Mã khuyến mãi">
+                    <button>Xác nhận</button>
+                </div>
+            </div>
+        
+
+
+        <div id="order-details" style="display: none;">
+            <center>
+            <h2>Thông tin hóa đơn mua hàng của bạn</h2>
+            <p>Mã đơn hàng: <span id="order-id"></span></p>      
+            <img id="bank-image" src="https://scontent.fhan14-5.fna.fbcdn.net/v/t1.15752-9/450930804_461888006583973_1989450625550105192_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFecRsOFcMx5z0oKdaRiUvV6N47QerXs0bo3jtB6tezRsjv_MyT8BafwB-LcRW2fO-lZALIJc2xKDa6hpZ_svoP&_nc_ohc=ZfAI0t4qbowQ7kNvgHQgP-L&_nc_ht=scontent.fhan14-5.fna&oh=03_Q7cD1QG1e8Bp0rJrKQC9faM7zFSqY-PBrVyfnBUQ9w1_UIe-Bg&oe=66E2C094" style="width:30%">
+            <p><b>Lưu ý: chụp ảnh lại hóa đơn mua hàng và hóa đơn chuyển khoản để tránh rủi ro không đáng có</b></p>
+        </center>
+        </div><br>
+    </div>
+
+    <script src="giỏ hàng.js"></script>
+</body>
+</html>

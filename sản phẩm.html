@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Cửa Hàng Online</title>
+    <link rel="stylesheet" href="nhap f.css">
+
+
+</html>
+<body>
+    <section style=" background-color:#F5F5F5;">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#"><img src="images__1_-removebg-preview (1).png"  height="43px" style="border-radius: 10%;"></a>
+            </div>
+            <div class="links">
+                <a href="nhapf.html" target="page">Trang chủ </a>
+                <a href="sản phẩm.html" target="page">Sản Phẩm </a>
+               
+                <a href="nhap e.html" target="page">Liên hệ </a> 
+                <a href="thông tin.html" target="page"> thông tin</a>
+            </div>
+    
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm">
+                <button>Tìm</button>
+            </div>
+            <div class="cart">
+                <a href="#"><img src="logo.png" height="70px" style="border-radius: 10%;"></a>
+            </div>
+        </div>
+
+
+        
+
+    <div class="include">
+        <div class="carousel">
+
+            <button class="prev-btn">&#8249;</button>
+            <button class="next-btn">&#8250;</button>
+            
+        </div>
+     <!-- Sản phẩm nổi bật -->
+     <section class="featured-products" >
+
+    <br>
+    <h2 >Dành cho bạn  <hr style=" border: 0;height: 5px; background-color: #ff4737;"></h2>
+  
+         <!-- Modal for Cart -->
+        
+    <div class="container">
+
+    
+
+        <div class="product-card">
+            <img src="https://down-vn.img.susercontent.com/file/829261dc213aa276adf06e7a11fe7793" alt="Product 1">
+            <h3>Quần Short Nam cao cấp <br><br></h3>
+            <p class="price">135.000 VND</p>
+            <button class="buy-button" onclick="addToCart('Quần Short Nam cao cấp', 135000)">Mua Ngay</button>
+        </div>
+        <div class="product-card">
+            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lqm93ygb5kjbf4" alt="Product 1">
+            <h3>ĐT Samsung Galaxy S24 Ultra</h3>
+            <p class="price">33.990.000 VND</p>
+            <button class="buy-button" onclick="addToCart('Điện thoại Samsung Galaxy S24 Ultra', 33990000)">Mua Ngay</button>
+        </div>
+        <div class="product-card">
+            <img src="https://down-vn.img.susercontent.com/file/sg-11134201-7qveh-liqzy0q8ktm253" alt="Product 1">
+            <h3>Tai nghe G11TWS BT Tai nghe không dây</h3>
+            <p class="price">67.000 VND</p>
+            <button class="buy-button" onclick="addToCart('Tai nghe G11TWS BT Tai nghe thể thao không dây', 67000)">Mua Ngay</button>
+        </div>
+        <div class="product-card">
+            <img src="https://down-vn.img.susercontent.com/file/sg-11134301-7rd56-lu7d0xa96uka94" alt="Product 1">
+            <h3>Cáp sạc siêu nhanh 3 trong 1 120W</h3>
+            <p class="price">35.000 VND</p>
+            <button class="buy-button" onclick="addToCart('Cáp sạc siêu nhanh 3 trong 1 120W', 35000)">Mua Ngay</button>
+        </div>
+        <div class="product-card">
+            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lud6ruybj86791" alt="Product 1">
+            <h3>Bộ Sạc nhanh SamSung 45W<br><br></h3>
+            <p class="price">24.000 VND</p>
+            <button class="buy-button" onclick="addToCart('bộ Sạc nhanh SamSung 45W', 24000)">Mua Ngay</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-card">
+            <img src="https://down-vn.img.susercontent.com/file/08f488e4187137d510355770e11015c6" alt="Product 1">
+            <h3>Đèn Pin Cầm Tay 5led 18650 <br><br></h3>
+            <p class="price">40.000 VND</p>
+            <button class="buy-button" onclick="addToCart('Đèn Pin Cầm Tay 5led 18650 Có Thể Sạc Lại Bằng Cổng usb', 40000)">Mua Ngay</button>
+        </div>
+        <div class="product-card">
+            <img src="https://down-vn.img.susercontent.com/file/vn-11134201-7qukw-lkgj73g4fvzc04" alt="Product 1">
+            <h3>Điện thoại Samsung Galaxy Z Flip5</h3>
+            <p class="price">29.990.000 VND</p>
+            <button class="buy-button" onclick="addToCart('Điện thoại Samsung Galaxy Z Flip5', 29990000)">Mua Ngay</button>
+        </div>
+        <div class="product-card">
+            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lvw62dkn0l3v86" alt="Product 1">
+            <h3>Áo Thun AM BE Nữ In Hình Siêu Cute</h3>
+            <p class="price">40.000 VND</p>
+            <button class="buy-button" onclick="addToCart('Quần Short Nam cao cấp haha', 40000)">Mua Ngay</button>
+        </div>
+        <div class="product-card">
+            <img src="https://down-vn.img.susercontent.com/file/vn-11134201-7r98o-lxt6coowjoih7b" alt="Product 1">
+            <h3> Áo Thun Phối Kẻ Viền Kèm Túi Burbery</h3>
+            <p class="price">25.000 VND</p>
+            <button class="buy-button" onclick="addToCart('Áo Thun Phối Kẻ Viền Kèm Gấu Nắp Túi Burbery', 25.000)">Mua Ngay</button>
+        </div>
+        <div class="product-card">
+            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-liqsmdrrhgb638" alt="Product 1">
+            <h3>Áo thun nữ , áo form vừa đẹp, vừa trẻ trung</h3>
+            <p class="price">55.000 VND</p>
+            <button class="buy-button" onclick="addToCart('Áo thun nữ , áo form vừa đẹp kiểu dáng trẻ trung', 55000)">Mua Ngay</button>
+        </div>
+</div>
+
+
+<div class="container">
+    <div class="product-card">
+        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-li2p3mj5eu4sa2" alt="Product 1">
+        <h3>Máy Sấy Tóc 2 Chiều Công Suất 3500W.</h3>
+        <p class="price">46.400 VND</p>
+        <button class="buy-button" onclick="addToCart('Máy Sấy Tóc 2 Chiều Nóng Lạnh Công Suất Lớn 3500W.', 46400)">Mua Ngay</button>
+    </div>
+    <div class="product-card">
+        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lur84pt3z38l59" alt="Product 1">
+        <h3>Ngủ Cốc Thể Hình Whey Nutri Power</h3>
+        <p class="price">891.000 VND</p>
+        <button class="buy-button" onclick="addToCart('Ngủ Cốc Thể Hình Whey Nutri Power', 891000)">Mua Ngay</button>
+    </div>
+    <div class="product-card">
+        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lw5jc6zw9yhl0f" alt="Product 1">
+        <h3>Nón lưỡi trai nam nữ thời trang</h3>
+        <p class="price">31.000 VND</p>
+        <button class="buy-button" onclick="addToCart('Nón lưỡi trai nam nữ challenge du lịch thời trang', 31000)">Mua Ngay</button>
+    </div>
+
+    <div class="product-card">
+        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lm7qn3yuemzjad" alt="Product 1">
+        <h3>COMBO BÁNH TRÁNG PHƠI SƯƠNG </h3>
+        <p class="price">59.990 VND</p>
+        <button class="buy-button" onclick="addToCart('COMBO BÁNH TRÁNG PHƠI SƯƠNG BƠ PHÔ MAI', 59990)">Mua Ngay</button>
+    </div>
+
+    <div class="product-card">
+        <img src="https://down-vn.img.susercontent.com/file/1fc61561c2ffdbf1e21a9f34239181d2" alt="Product 1">
+        <h3>Kính Mát Gọng Kim Loại Tròn Chống Bức Xạ</h3>
+        <p class="price">30.000 VND</p>
+        <button class="buy-button" onclick="addToCart('Kính Mát Gọng Kim Loại Tròn Chống Bức Xạ', 30000)">Mua Ngay</button>
+    </div>
+</div>
+    
+<div id="cart-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeCart()">&times;</span>
+        <h2>Giỏ Hàng</h2>
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Sản phẩm</th>
+                    <th>Số lượng</th>
+                    <th>Đơn giá (VND)</th>
+                    <th>Thành tiền (VND)</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Cart items will be added here -->
+            </tbody>
+        </table>
+        <p><strong>Tổng tiền:</strong> <span id="total-price">0</span> VND</p>
+        <button style="height: 35px;width:100px;color:#F5F5F5; background-color: #ff4737;" onclick="checkout()">Thanh toán</button>
+    </div>
+</div>
+
+
+
+
+</section>
+<hr style=" border: 0;height: 5px; background-color: #ff4737;">
+    <!-- Chân trang -->
+    <footer>
+        <div class="contact-form">
+            <h2>Phát triển </h2>
+            <div class="contact-info">
+                <p><strong>Tên sinh viên:</strong> Lê Quốc Anh</p>
+                <p><strong>MSSV:</strong> PD10815</p>
+                <p><strong>Địa chỉ:</strong> 354 Tô Hiệu, phường Hoàng Minh, quận Liên Chiểu, thành phố Đà Nẵng</p>
+                <p><strong>Email:</strong> anhlqpd10815@gmail.com</p>
+                <p><strong>Số điện thoại:</strong> 0832261607</p>
+            </div>
+
+        </div>
+    </footer>
+</section>
+<script src="nhap f.js"></script>
+
+</body>
+</html>
